@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Black Jack</title>
+    <script type="text/javascript" defer src="js/blackJack.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/blackJack.css">
+    <script src="https://kit.fontawesome.com/42762d49f1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="mainWindow" class="display_flex justify-content-center">
+        <div id="gameWindow">
+            <div id="firstLine" class="display_flex justify-content-center">
+                <div class="pcCard">
+                    <img id="pcCard1" class="userCard">
+                </div>
+                <div class="pcCard">
+                    <img  id="pcCard2" class="userCard">
+                </div>
+                <div class="pcCard">
+                    <img  id="pcCard3" class="userCard">
+                </div>
+            </div>
+            <div id="secondLine">
+                <div class="display_flex justify-content-center">
+                    <div>
+                        <button class="button" id="betButtonMinus">
+                            BET -
+                        </button>
+                        <button class="button" id="betButtonPlus">
+                            BET +
+                        </button>
+                        <button class="button" id="confirmBet">
+                            CONFIRM BET
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button" id="resultButton">
+                            REVEAL CARDS
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button" id="drawCardButton">
+                            DRAW A CARD
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button" id="reshuffle">
+                            RESHUFFLE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="thirdLine">
+                <div class="display_flex justify-content-center">
+                    <div class="displayScreen" id="userBalance">
+                        Your balance:
+                    </div>
+                    <div class="displayScreen" id="sumBet">
+                        Sum of bet:
+                    </div>
+                    <div class="displayScreen" id="userPoints">
+
+                    </div>
+                </div>
+            </div>
+            <div id="fourthLine">
+                <div class="display_flex justify-content-center">
+                    <div class="pcCard">
+                        <img id="userCard1" class="userCard">
+                    </div>
+                    <div class="pcCard">
+                        <img id="userCard2" class="userCard">
+                    </div>
+                    <div class="pcCard">
+                        <img  id="userCard3" class="userCard">
+                    </div>
+                    <div class="pcCard">
+                        <img id="userCard4" class="userCard">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gameHistory">
+
+        </div>
+    </div>
+</body>
+</html>
